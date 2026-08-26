@@ -15,14 +15,11 @@ Studio Onboarding & GitHub Workspace Setup
 [GITHUB PAGES URL](https://n0nbeenary.github.io/webworks-studio/)
 
 ## Week 1 Requirements
-- Edit project files in Visual Studio Code.
-- Replace `YOUR NAME` in `index.html` and this README.
-- Change the Studio Status in `index.html` to `Ready for Client Work`.
-- Test the site locally before and after editing.
-- Commit and push your work to your public GitHub repository.
-- Publish the site with GitHub Pages.
-- Replace `GITHUB PAGES URL` above with the working published site URL.
-- Commit and push the final README update.
+- This week I updated Developer Name and Studio Status in `index.html` and this README.
+- I tested the site locally before and after each edit to confirm changes were made properly at each step.
+- I committed and pushed my work to my public GitHub repository to then publish the site with GitHub Pages.
+- After verifying the working page, I included the working published site URL above and pushed a README update.
+- During a final review of the repo and comparing the project to the rubric, a final README update was pushed to establish professional documentation in this README.
 
 ## Important
 Do not add private information such as a student ID, home address, phone number, personal email address, passwords, or authentication tokens to this public repository.

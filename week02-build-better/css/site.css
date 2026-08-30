@@ -14,10 +14,31 @@ header {
   width: 720px;
 }
 
+main {
+  width: 720px;
+  background-color: #FFFFFF;
+}
+
 p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 20px;
+}
+
+hr.greendivider {
+  display: block;
+  border: none;
+  width: 720px;
+  height: 4px;
+  background-color: #315C3D;
+}
+
+hr.greydivider {
+  display: block;
+  border: none;
+  width: 510px;
+  height: 1px;
+  background-color: #C8BE9D;
 }
 
 .intro {
@@ -42,6 +63,13 @@ h2 {
   color: #315C3D;
   font-size: 24px;
   margin-bottom: 8px;
+}
+
+.label {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #315C3D;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .left {
@@ -88,6 +116,58 @@ h2 {
   width: 280px;
   margin-top: 16px;
   margin-right: 20px;
+}
+
+.planttable {
+  width: 720px;
+  background-color: #F6F0DA;
+  border: 1px solid #D5CCAE;
+  display: flex;
+}
+
+.plantcell {
+  background-color: #F6F0DA;
+  border: 1px solid #D5CCAE;
+  width: 240px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.linktable {
+  width: 190px;
+  background-color: #EFE7CE;
+  margin-right: 20px;
+  display: flex;
+  flex: 1;
+}
+
+.linkcell {
+  padding: 10px;
+}
+
+.maincontainer {
+  width: 720px;
+  display: flex;
+}
+
+.servicescontainer {
+  width: 510px;
+}
+
+.aboutcontainer {
+  width: 510px;
+  display: flex;
+}
+
+.aboutphoto {
+  width: 170px;
+  height: 130px;
+  float: left;
+}
+
+.abouttext {
+  width: 330px;
+ margin-left: 10px
 }
 
 a {

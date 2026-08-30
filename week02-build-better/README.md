@@ -6,6 +6,22 @@ Alex Mauger
 ## Role
 Junior Web Developer
 
+## Improvements
+All tables were updated to div tags to prepare for making the page responsive in the next sprint.
+
+All blank space images were replaced with padding or margins to improve maintainability.
+
+Organized stylesheet to group similar rules together for future revisions.
+
+## What I Intentionally Did Not Change
+I did not change the layout or content to match the original client content. 
+
+## Next Sprint
+I expect to update the page layout with Grid or Flexbox.
+
+## Live Site
+[GITHUB PAGES URL](https://n0nbeenary.github.io/webworks-studio//week02-build-better/index.html)
+
 ## Scenario
 WebWorks Studio has inherited this small-business website from a previous developer.
 

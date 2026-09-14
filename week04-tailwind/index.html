@@ -9,18 +9,17 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-
-  <header>
-    <div>
-      <a href="index.html">Hill &amp; Hollow Coffee</a>
+<body class="bg-[#eadcca] text-[#63564f]">
+  <header class="bg-[#2f241f] text-white">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-6 p-6"  text-white>
+      <a href="index.html" class="text-2xl font-bold">Hill &amp; Hollow Coffee</a>
 
       <nav aria-label="Primary navigation">
-        <ul>
-          <li><a href="#coffee">Coffee</a></li>
-          <li><a href="#story">Our Story</a></li>
-          <li><a href="#visit">Visit</a></li>
-        </ul>
+        <div class="flex gap-6 text-md">
+          <a href="#coffee">Coffee</a>
+          <a href="#story">Our Story</a>
+          <a href="#visit">Visit</a>
+        </div>
       </nav>
     </div>
   </header>
@@ -28,11 +27,11 @@
   <main>
 
     <section>
-      <div>
-        <div>
-          <p>Small-batch roasted in the Texas Hill Country</p>
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-6 py-12">
+        <div class="flex flex-col gap-6">
+          <p class="text-xs text-[#8b5e3c] text-transform: uppercase font-bold">Small-batch roasted in the Texas Hill Country</p>
 
-          <h1>Good coffee. No complicated personality required.</h1>
+          <h1 class="text-3xl text-[#2f241f] font-bold">Good coffee. No complicated personality required.</h1>
 
           <p>
             Hill &amp; Hollow Coffee roasts approachable, everyday coffee for
@@ -40,73 +39,73 @@
             needing a tasting-wheel vocabulary.
           </p>
 
-          <div>
-            <a href="#coffee">Shop the roast lineup</a>
-            <a href="#story">Meet the roastery</a>
+          <div class="flex gap-6 text-md items-center">
+            <a href="#coffee" class="border-3 border-[#6d4a38] bg-[#6d4a38] text-white text-transform: uppercase font-bold px-4 py-2 rounded justify-content: center">Shop the roast lineup</a>
+            <a href="#story" class="border-3 border-[#6d4a38] text-[#6d4a38] text-transform: uppercase font-bold px-4 py-2 rounded">Meet the roastery</a>
           </div>
         </div>
 
         <div>
           <img
             src="images/coffee-bag.svg"
-            alt="Illustration of a Hill and Hollow Coffee bag beside a ceramic mug">
+            alt="Illustration of a Hill and Hollow Coffee bag beside a ceramic mug"  class="rounded-2xl">
         </div>
       </div>
     </section>
 
-    <section id="coffee">
-      <div>
-        <p>Roast Lineup</p>
-        <h2>Three coffees. Zero existential crisis.</h2>
+    <section id="coffee" class="bg-[#faf7f2] py-12">
+      <div  class="max-w-7xl mx-auto gap-6 px-6">
+        <p class="text-xs text-[#8b5e3c] text-transform: uppercase font-bold">Roast Lineup</p>
+        <h2 class="text-2xl text-[#2f241f] font-bold">Three coffees. Zero existential crisis.</h2>
 
-        <div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 py-12">
 
-          <article>
-            <p>Medium Roast</p>
-            <h3>Front Porch</h3>
-            <p>
+          <article class="bg-white px-4 py-4 border-3 border-[#ded6cc] rounded-2xl">
+            <p class="text-xs text-[#8b5e3c] text-transform: uppercase font-bold">Medium Roast</p>
+            <h3 class="text-xl font-bold text-[#2f241f] py-2">Front Porch</h3>
+            <p class="py-2">
               Balanced and easygoing with notes of milk chocolate, toasted almond,
               and brown sugar.
             </p>
-            <p>12 oz · Whole Bean</p>
-            <a href="#visit">Find it at the shop</a>
+            <p class="py-2 text-sm">12 oz · Whole Bean</p>
+            <a href="#visit" class="bg-[#f0e4d5] text-[#2f241f] mt-12 rounded-lg p-2 font-bold">Find it at the shop</a>
           </article>
 
-          <article>
-            <p>Light Roast</p>
-            <h3>Daybreak</h3>
-            <p>
+          <article class="bg-white px-4 py-4 border-3 border-[#ded6cc] rounded-2xl">
+            <p class="text-xs text-[#8b5e3c] text-transform: uppercase font-bold">Light Roast</p>
+            <h3 class="text-xl font-bold text-[#2f241f] py-2">Daybreak</h3>
+            <p class="py-2">
               Bright but approachable with citrus, honey, and a clean finish.
             </p>
-            <p>12 oz · Whole Bean</p>
-            <a href="#visit">Find it at the shop</a>
+            <p class="py-2 text-sm">12 oz · Whole Bean</p>
+            <a href="#visit" class="bg-[#f0e4d5] text-[#2f241f] mt-12 rounded-lg p-2 font-bold">Find it at the shop</a>
           </article>
 
-          <article>
-            <p>Dark Roast</p>
-            <h3>Last Light</h3>
-            <p>
+          <article class="bg-white px-4 py-4 border-3 border-[#ded6cc] rounded-2xl">
+            <p class="text-xs text-[#8b5e3c] text-transform: uppercase font-bold">Dark Roast</p>
+            <h3 class="text-xl font-bold text-[#2f241f] py-2">Last Light</h3>
+            <p class="py-2">
               Deep and smooth with cocoa, caramelized sugar, and a little smoke.
             </p>
-            <p>12 oz · Whole Bean</p>
-            <a href="#visit">Find it at the shop</a>
+            <p class="py-2 text-sm">12 oz · Whole Bean</p>
+            <a href="#visit" class="bg-[#f0e4d5] text-[#2f241f] mt-12 rounded-lg p-2 font-bold">Find it at the shop</a>
           </article>
 
         </div>
       </div>
     </section>
 
-    <section id="story">
-      <div>
+    <section id="story" class="py-12">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-6">
         <div>
           <img
             src="images/roastery.svg"
-            alt="Illustration of a small coffee roastery with sacks, shelves, and a roasting machine">
+            alt="Illustration of a small coffee roastery with sacks, shelves, and a roasting machine" class="rounded-2xl">
         </div>
 
         <div>
-          <p>Our Story</p>
-          <h2>Roasted for normal mornings.</h2>
+          <p class="text-xs text-[#8b5e3c] text-transform: uppercase font-bold">Our Story</p>
+          <h2 class="text-2xl text-[#2f241f] font-bold">Roasted for normal mornings.</h2>
           <p>
             Hill &amp; Hollow started with a simple idea: specialty coffee can be
             excellent without being intimidating.
@@ -116,8 +115,8 @@
             in language that sounds like something a human being might actually say.
           </p>
 
-          <ul>
-            <li>Roasted weekly</li>
+          <ul style="list-style-type: disc;" class="px-6 py-4">
+            <li>Roasted weekly</li> 
             <li>Small-batch production</li>
             <li>Approachable flavor profiles</li>
           </ul>
@@ -125,42 +124,42 @@
       </div>
     </section>
 
-    <section>
-      <div>
-        <p>Why Hill &amp; Hollow?</p>
+    <section class="bg-[#faf7f2] py-12">
+      <div  class="max-w-7xl mx-auto gap-6 px-6">
+        <p class="text-xs text-[#8b5e3c] text-transform: uppercase font-bold">Why Hill &amp; Hollow?</p>
 
-        <div>
-          <article>
-            <h3>Fresh</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 py-12">
+          <article class="bg-white px-4 py-2 border-3 border-[#ded6cc] rounded-2xl">
+            <h3 class="text-xl font-bold">Fresh</h3>
             <p>Roasted in small batches and dated clearly.</p>
           </article>
 
-          <article>
-            <h3>Simple</h3>
+          <article class="bg-white px-4 py-2 border-3 border-[#ded6cc] rounded-2xl">
+            <h3 class="text-xl font-bold">Simple</h3>
             <p>A focused lineup instead of 47 nearly identical bags.</p>
           </article>
 
-          <article>
-            <h3>Local</h3>
+          <article class="bg-white px-4 py-2 border-3 border-[#ded6cc] rounded-2xl">
+            <h3 class="text-xl font-bold">Local</h3>
             <p>Roasted and packed in the Texas Hill Country.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="visit">
-      <div>
-        <div>
-          <p>Visit the Roastery</p>
-          <h2>Come smell what we're roasting.</h2>
+    <section id="visit" class="py-12">
+      <div class="max-w-7xl mx-auto gap-24 px-6 grid grid-cols-2 md:grid-cols-2">
+        <div class="mb-6">
+          <p class="text-xs text-[#8b5e3c] text-transform: uppercase font-bold">Visit the Roastery</p>
+          <h2 class="text-2xl text-[#2f241f] font-bold">Come smell what we're roasting.</h2>
           <p>
             Stop by for fresh beans, simple brewing advice, and whatever is coming
             out of the roaster that day.
           </p>
         </div>
 
-        <div>
-          <p><strong>Hill &amp; Hollow Coffee</strong></p>
+        <div class="">
+          <p class="text-[#2f241f] font-bold">Hill &amp; Hollow Coffee</p>
           <p>214 Market Road</p>
           <p>Boerne, TX 78006</p>
           <p>Tuesday–Saturday · 8 a.m.–4 p.m.</p>
@@ -171,12 +170,14 @@
 
   </main>
 
-  <footer>
-    <div>
+  <footer class="bg-[#2f241f] text-white">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-6 p-6">
       <p><strong>Hill &amp; Hollow Coffee</strong></p>
       <p>Roasted in the Texas Hill Country.</p>
     </div>
   </footer>
+
+  </div>
 
 </body>
 </html>

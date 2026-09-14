@@ -47,7 +47,7 @@ Before submitting, replace the placeholders below with approximately three examp
 **Why:**  
 
 ## Live Site
-Add your published GitHub Pages URL here.
+https://n0nbeenary.github.io/webworks-studio/week04-tailwind/index.html
 
 ## Reminder
 The Tailwind Play CDN is being used for this instructional sprint only. It is intended for development, not production deployment workflows.

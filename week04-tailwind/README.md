@@ -35,16 +35,16 @@ Use Tailwind utilities to translate the supplied visual direction into a polishe
 Before submitting, replace the placeholders below with approximately three examples.
 
 ### Decision 1
-**Used:**  
-**Why:**  
+The paragraphs above the headers were originally #8b5e3c. I updated them to #6d4a38.
+I decided this change after checking the accessibility of the website and discovering that this color had low contrast with the background.
 
 ### Decision 2
-**Used:**  
-**Why:**  
+I added a hover state to each button to scale and add a drop shadow. For the Roast Lineup buttons I adjusted the hover state so that the background and text color changed as well.  
+I decided this change to make it clear for users that these buttons will result in an action.
 
 ### Decision 3
-**Used:**  
-**Why:**  
+I set the max width for the images to xl.  
+I decided this change after repeated testing of viewing the webpage in a narrow browser. Without a max width, the images took up most of the browser in narrow windows, reducing the visibility of the CTA buttons across the webpage.
 
 ## Live Site
 https://n0nbeenary.github.io/webworks-studio/week04-tailwind/index.html

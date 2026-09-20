@@ -55,6 +55,7 @@ body {
   border: none;
   border-radius: 5px; 
   text-transform: uppercase;
+  text-decoration: none;
   font-weight: bold;
   padding: 5px 20px;
 }
@@ -66,7 +67,7 @@ body {
 }
 
 img {
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .preheader {

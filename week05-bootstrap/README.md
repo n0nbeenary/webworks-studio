@@ -100,20 +100,20 @@ Complete all three responses below. Keep each response concise and specific to *
 ## 1. Framework Choice
 **Identify one feature Bootstrap made significantly faster to implement. Briefly explain what Bootstrap provided and why that helped this project.**
 
-[Replace this text with your response.]
+Bootstrap made the cards significantly faster to implement. When I tried to implement similar cards using Tailwind, it was a larger struggle to create the basic cards and their respective buttons.
 
 ## 2. Adaptation
 **Identify one Bootstrap default you intentionally changed for the client. Explain what you changed and how the adaptation better supports Cedar & Stone.**
 
-[Replace this text with your response.]
+I changed the Bootstrap defaults for the primary and secondary buttons. After changing the two different buttons in the hero section, I realized that it would be more tedious to create a new class for each button, especially since most used one of two styles. Changing the default style to match Cedar & Stone allowed me to simplify custom.css and save time.
 
 ## 3. Professional Judgment
 **Identify one part of the project you would not rebuild from scratch because Bootstrap already provides an appropriate solution. Explain why keeping the framework solution is the better professional choice.**
 
-[Replace this text with your response.]
+I would not rebuild the navbar from scratch. The Bootstap navbar is already responsive and collapses nicely. Rebuilding from scratch would take time away from other parts of the project.
 
 ## Live Site
-[Add your published GitHub Pages URL here.]
+(https://n0nbeenary.github.io/webworks-studio/week05-bootstrap/index.html)
 
 ## Final Reminder
 The goal is not to use as many Bootstrap classes as possible.

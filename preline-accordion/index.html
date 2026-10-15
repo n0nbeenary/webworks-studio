@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Preline Accordion</title>
+  <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="bg-[#FFB865]">
+<div class="flex py-15 items-center justify-center">
+<div class="hs-accordion-group max-w-3xl rounded-lg border-2 border-[#FF7518] bg-[#F9F6EE] px-5 shadow-lg">
+    <div class="hs-accordion border-b border-[#CB591B] last:border-b-0 active" id="accordion-heading-one">
+
+        <button
+        class="hs-accordion-toggle flex w-full items-center justify-between p-5 text-left text-xl font-semibold text-gray-800 transition hover:bg-gray-50 hover:text-[#6A0DAD] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#A56BDB]"
+        aria-expanded="false"
+            aria-controls="accordion-content-one">
+
+            Why don't ghosts like rain?
+
+            <span class="text-xl">+</span>
+
+        </button>
+
+        <div
+            id="accordion-content-one"
+            class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+            role="region"
+            aria-labelledby="accordion-heading-one">
+
+            <p class="px-5 py-2 text-gray-600">
+                Because it dampens their spirits.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="hs-accordion border-b border-[#CB591B] last:border-b-0" id="accordion-heading-two">
+
+        <button
+        class="hs-accordion-toggle flex w-full items-center justify-between p-5 text-left text-xl font-semibold text-gray-800 transition hover:bg-gray-50 hover:text-[#6A0DAD] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#A56BDB]"
+        aria-expanded="false"
+            aria-controls="accordion-content-two">
+
+            What do you call two witches trick-or-treating together?
+
+            <span class="text-xl">+</span>
+
+        </button>
+
+        <div
+            id="accordion-content-two"
+            class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+            role="region"
+            aria-labelledby="accordion-heading-two">
+
+            <p class="px-5 py-2 text-gray-600">
+                Broommates.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="hs-accordion border-b border-[#CB591B] last:border-b-0" id="accordion-heading-three">
+
+        <button
+            class="hs-accordion-toggle flex w-full items-center justify-between p-5 text-left text-xl font-semibold text-gray-800 transition hover:bg-gray-50 hover:text-[#6A0DAD] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#A56BDB]"
+            aria-expanded="false"
+            aria-controls="accordion-content-three">
+
+            Why are cemeteries so noisy?
+
+            <span class="text-xl">+</span>
+
+        </button>
+
+        <div
+            id="accordion-content-three"
+            class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+            role="region"
+            aria-labelledby="accordion-heading-three">
+
+            <p class="px-5 py-2 text-gray-600">
+                Because of all the coffin!
+            </p>
+
+        </div>
+    </div>
+</div>
+</div>
+<script src="./node_modules/preline/dist/preline.js"></script>
+</body>
+
+</html>

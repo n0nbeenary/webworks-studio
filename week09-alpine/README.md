@@ -171,13 +171,13 @@ TODO
 ## Preline Decision
 
 **Preline component selected:**  
-TODO
+Accordion
 
 **Problem it solves:**  
-TODO
+It allows users to quickly identify the question relevent to them without the need to read through irrelevant information.
 
 **How you adapted it:**  
-TODO
+I turned each article from the previous grid into an accordion item.
 
 ## Accessibility Notes
 
@@ -201,7 +201,7 @@ TODO
 ## Official Documentation Used
 
 - Alpine.js: TODO
-- Preline UI: TODO
+- Preline UI: Accordion - Bordered
 
 # Official References
 
@@ -214,9 +214,9 @@ TODO
 # Final Check
 
 - [ ] `npm run build` completes.
-- [ ] Tailwind styles load.
+- [x] Tailwind styles load.
 - [ ] Alpine interaction works.
-- [ ] Preline component works.
+- [x] Preline component works.
 - [ ] They solve different needs.
 - [ ] Keyboard testing works.
 - [ ] Responsive testing is complete.

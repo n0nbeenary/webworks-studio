@@ -59,42 +59,105 @@
         <p class="mt-3 text-lg text-slate-600">The market includes returning artists and first-time vendors. Use this content as the basis for your Alpine-powered exploration tool.</p>
       </div>
 
-      <!-- TODO: REQUIRED ALPINE INTERACTION
-           Add one purposeful Alpine-powered exploration tool here.
-           Requirements:
-           - x-data
-           - at least one user event
-           - at least one additional reactive directive
-           - visible, understandable interface response
-           - semantic, keyboard-accessible controls
-           Do NOT simply paste the classroom playground unchanged. -->
+      <!--Modal Grid-->
+      <div class="mt-8 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <!--Cielo Clay Studios-->
+        <div x-data="{modalIsOpen: false}">
+        <button x-on:click="modalIsOpen = true" type="button" class="rounded-2xl border border-stone-300 bg-white shadow-sm p-4 text-center text-xl font-bold text-[#142b3a] transition hover:bg-[#f6c77d] focus:outline-none focus:ring-4 focus:ring-[#173946]">
+          <img src="images/ceramics.svg" alt="Handmade ceramic mugs displayed at a market table" class="aspect-[3/2] w-full object-cover"><h3 class="mt-2">Cielo Clay Studio</h3></button>
+          <div x-cloak x-show="modalIsOpen" x-transition.opacity.duration.200ms x-trap.inert.noscroll="modalIsOpen" x-on:keydown.esc.window="modalIsOpen = false" x-on:click.self="modalIsOpen = false" class="fixed inset-0 z-30 flex w-full items-center justify-center bg-black/20 p-4 pb-8 backdrop-blur-md lg:p-8" role="dialog" aria-modal="true" aria-labelledby="defaultModalTitle">
+            <!-- Modal Dialog -->
+            <div x-show="modalIsOpen" x-transition:enter="transition ease-out duration-200 delay-100 motion-reduce:transition-opacity" x-transition:enter-start="opacity-0 scale-50" x-transition:enter-end="opacity-100 scale-100" class="flex max-w-lg flex-col gap-4 overflow-hidden rounded-2xl border border-outline bg-white">
+              <!-- Dialog Header -->
+              <div class="flex items-center justify-between p-4">
+                  <button x-on:click="modalIsOpen = false" aria-label="close modal" class="focus:outline-none focus:ring-2 focus:ring-[#173946]">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" fill="none" stroke-width="1.4" class="w-5 h-5">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                      </svg>
+                  </button>
+              </div>
+              <!-- Dialog Body -->
+              <div class="px-4 py-4"> 
+                  <img src="images/ceramics.svg" alt="Handmade ceramic mugs displayed at a market table" class="aspect-[3/2] w-full object-cover">
+                  <div class="p-5"><p class="text-sm font-bold uppercase tracking-wide text-[#246b63]">Ceramics</p><h3 class="mt-2 text-xl font-bold text-[#142b3a]">Cielo Clay Studio</h3><p class="mt-2 text-sm leading-6 text-slate-600">Small-batch mugs, bowls, and serving pieces inspired by desert colors and South Texas skies.</p><p class="mt-4 text-sm"><strong>Booth:</strong> A12</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="mt-8 rounded-xl border-2 border-dashed border-[#7da59c] bg-[#eef5f4] p-5">
-        <p class="font-bold text-[#174f49]">Student work area: Alpine interaction</p>
-        <p class="mt-1 text-sm leading-6 text-slate-700">Decide what would genuinely help a visitor explore these makers, then implement that behavior using Alpine.</p>
+        <!--Rio Press Co.-->
+        <div x-data="{modalIsOpen: false}">
+        <button x-on:click="modalIsOpen = true" type="button" class="rounded-2xl border border-stone-300 bg-white shadow-sm p-4 text-center text-xl font-bold text-[#142b3a] transition hover:bg-[#f6c77d] focus:outline-none focus:ring-4 focus:ring-[#173946]">
+          <img src="images/printmaking.svg" alt="Colorful art prints hanging in a local maker booth" class="aspect-[3/2] w-full object-cover"><h3 class="mt-2">Rio Press Co.</h3></button>
+          <div x-cloak x-show="modalIsOpen" x-transition.opacity.duration.200ms x-trap.inert.noscroll="modalIsOpen" x-on:keydown.esc.window="modalIsOpen = false" x-on:click.self="modalIsOpen = false" class="fixed inset-0 z-30 flex w-full items-center justify-center bg-black/20 p-4 pb-8 backdrop-blur-md lg:p-8" role="dialog" aria-modal="true" aria-labelledby="defaultModalTitle">
+            <!-- Modal Dialog -->
+            <div x-show="modalIsOpen" x-transition:enter="transition ease-out duration-200 delay-100 motion-reduce:transition-opacity" x-transition:enter-start="opacity-0 scale-50" x-transition:enter-end="opacity-100 scale-100" class="flex max-w-lg flex-col gap-4 overflow-hidden rounded-2xl border border-outline bg-white">
+              <!-- Dialog Header -->
+              <div class="flex items-center justify-between p-4">
+                  <button x-on:click="modalIsOpen = false" aria-label="close modal" class="focus:outline-none focus:ring-2 focus:ring-[#173946]">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" fill="none" stroke-width="1.4" class="w-5 h-5">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                      </svg>
+                  </button>
+              </div>
+              <!-- Dialog Body -->
+              <div class="px-4 py-4"> 
+                  <img src="images/printmaking.svg" alt="Colorful art prints hanging in a local maker booth" class="aspect-[3/2] w-full object-cover">
+                  <div class="p-5"><p class="text-sm font-bold uppercase tracking-wide text-[#246b63]">Printmaking</p><h3 class="mt-2 text-xl font-bold text-[#142b3a]">Rio Press Co.</h3><p class="mt-2 text-sm leading-6 text-slate-600">Hand-pulled prints featuring native plants, neighborhood architecture, and regional landmarks.</p><p class="mt-4 text-sm"><strong>Booth:</strong> B04</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Luna Loom-->
+        <div x-data="{modalIsOpen: false}">
+        <button x-on:click="modalIsOpen = true" type="button" class="rounded-2xl border border-stone-300 bg-white shadow-sm p-4 text-center text-xl font-bold text-[#142b3a] transition hover:bg-[#f6c77d] focus:outline-none focus:ring-4 focus:ring-[#173946]">
+          <img src="images/textiles.svg" alt="Handwoven textiles and fabric goods at a market stand" class="aspect-[3/2] w-full object-cover"><h3 class="mt-2">Luna Loom Works</h3></button>
+          <div x-cloak x-show="modalIsOpen" x-transition.opacity.duration.200ms x-trap.inert.noscroll="modalIsOpen" x-on:keydown.esc.window="modalIsOpen = false" x-on:click.self="modalIsOpen = false" class="fixed inset-0 z-30 flex w-full items-center justify-center bg-black/20 p-4 pb-8 backdrop-blur-md lg:p-8" role="dialog" aria-modal="true" aria-labelledby="defaultModalTitle">
+            <!-- Modal Dialog -->
+            <div x-show="modalIsOpen" x-transition:enter="transition ease-out duration-200 delay-100 motion-reduce:transition-opacity" x-transition:enter-start="opacity-0 scale-50" x-transition:enter-end="opacity-100 scale-100" class="flex max-w-lg flex-col gap-4 overflow-hidden rounded-2xl border border-outline bg-white">
+              <!-- Dialog Header -->
+              <div class="flex items-center justify-between p-4">
+                  <button x-on:click="modalIsOpen = false" aria-label="close modal" class="focus:outline-none focus:ring-2 focus:ring-[#173946]">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" fill="none" stroke-width="1.4" class="w-5 h-5">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                      </svg>
+                  </button>
+              </div>
+              <!-- Dialog Body -->
+              <div class="px-4 py-4"> 
+                  <img src="images/textiles.svg" alt="Handwoven textiles and fabric goods at a market stand" class="aspect-[3/2] w-full object-cover">
+                  <div class="p-5"><p class="text-sm font-bold uppercase tracking-wide text-[#246b63]">Textiles</p><h3 class="mt-2 text-xl font-bold text-[#142b3a]">Luna Loom Works</h3><p class="mt-2 text-sm leading-6 text-slate-600">Handwoven scarves, table runners, and small home goods in natural fibers and muted colors.</p><p class="mt-4 text-sm"><strong>Booth:</strong> C07</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Mesquite & Main-->
+        <div x-data="{modalIsOpen: false}">
+        <button x-on:click="modalIsOpen = true" type="button" class="rounded-2xl border border-stone-300 bg-white shadow-sm p-4 text-center text-xl font-bold text-[#142b3a] transition hover:bg-[#f6c77d] focus:outline-none focus:ring-4 focus:ring-[#173946]">
+          <img src="images/woodcraft.svg" alt="Handcrafted wooden serving boards on display" class="aspect-[3/2] w-full object-cover"><h3 class="mt-2">Mesquite &amp; Main</h3></button>
+          <div x-cloak x-show="modalIsOpen" x-transition.opacity.duration.200ms x-trap.inert.noscroll="modalIsOpen" x-on:keydown.esc.window="modalIsOpen = false" x-on:click.self="modalIsOpen = false" class="fixed inset-0 z-30 flex w-full items-center justify-center bg-black/20 p-4 pb-8 backdrop-blur-md lg:p-8" role="dialog" aria-modal="true" aria-labelledby="defaultModalTitle">
+            <!-- Modal Dialog -->
+            <div x-show="modalIsOpen" x-transition:enter="transition ease-out duration-200 delay-100 motion-reduce:transition-opacity" x-transition:enter-start="opacity-0 scale-50" x-transition:enter-end="opacity-100 scale-100" class="flex max-w-lg flex-col gap-4 overflow-hidden rounded-2xl border border-outline bg-white">
+              <!-- Dialog Header -->
+              <div class="flex items-center justify-between p-4">
+                  <button x-on:click="modalIsOpen = false" aria-label="close modal" class="focus:outline-none focus:ring-2 focus:ring-[#173946]">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" fill="none" stroke-width="1.4" class="w-5 h-5">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                      </svg>
+                  </button>
+              </div>
+              <!-- Dialog Body -->
+              <div class="px-4 py-4"> 
+                  <img src="images/woodcraft.svg" alt="Handcrafted wooden serving boards on display" class="aspect-[3/2] w-full object-cover">
+                  <div class="p-5"><p class="text-sm font-bold uppercase tracking-wide text-[#246b63]">Woodcraft</p><h3 class="mt-2 text-xl font-bold text-[#142b3a]">Mesquite &amp; Main</h3><p class="mt-2 text-sm leading-6 text-slate-600">Handcrafted serving boards, trays, and small household pieces from reclaimed and locally sourced wood.</p><p class="mt-4 text-sm"><strong>Booth:</strong> D03</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <article data-category="ceramics" class="overflow-hidden rounded-2xl border border-stone-300 bg-white shadow-sm">
-          <img src="images/ceramics.svg" alt="Handmade ceramic mugs displayed at a market table" class="aspect-[3/2] w-full object-cover">
-          <div class="p-5"><p class="text-sm font-bold uppercase tracking-wide text-[#246b63]">Ceramics</p><h3 class="mt-2 text-xl font-bold text-[#142b3a]">Cielo Clay Studio</h3><p class="mt-2 text-sm leading-6 text-slate-600">Small-batch mugs, bowls, and serving pieces inspired by desert colors and South Texas skies.</p><p class="mt-4 text-sm"><strong>Booth:</strong> A12</p></div>
-        </article>
-
-        <article data-category="prints" class="overflow-hidden rounded-2xl border border-stone-300 bg-white shadow-sm">
-          <img src="images/printmaking.svg" alt="Colorful art prints hanging in a local maker booth" class="aspect-[3/2] w-full object-cover">
-          <div class="p-5"><p class="text-sm font-bold uppercase tracking-wide text-[#246b63]">Printmaking</p><h3 class="mt-2 text-xl font-bold text-[#142b3a]">Rio Press Co.</h3><p class="mt-2 text-sm leading-6 text-slate-600">Hand-pulled prints featuring native plants, neighborhood architecture, and regional landmarks.</p><p class="mt-4 text-sm"><strong>Booth:</strong> B04</p></div>
-        </article>
-
-        <article data-category="textiles" class="overflow-hidden rounded-2xl border border-stone-300 bg-white shadow-sm">
-          <img src="images/textiles.svg" alt="Handwoven textiles and fabric goods at a market stand" class="aspect-[3/2] w-full object-cover">
-          <div class="p-5"><p class="text-sm font-bold uppercase tracking-wide text-[#246b63]">Textiles</p><h3 class="mt-2 text-xl font-bold text-[#142b3a]">Luna Loom Works</h3><p class="mt-2 text-sm leading-6 text-slate-600">Handwoven scarves, table runners, and small home goods in natural fibers and muted colors.</p><p class="mt-4 text-sm"><strong>Booth:</strong> C07</p></div>
-        </article>
-
-        <article data-category="woodcraft" class="overflow-hidden rounded-2xl border border-stone-300 bg-white shadow-sm">
-          <img src="images/woodcraft.svg" alt="Handcrafted wooden serving boards on display" class="aspect-[3/2] w-full object-cover">
-          <div class="p-5"><p class="text-sm font-bold uppercase tracking-wide text-[#246b63]">Woodcraft</p><h3 class="mt-2 text-xl font-bold text-[#142b3a]">Mesquite &amp; Main</h3><p class="mt-2 text-sm leading-6 text-slate-600">Serving boards, trays, and small household pieces made from reclaimed and locally sourced wood.</p><p class="mt-4 text-sm"><strong>Booth:</strong> D03</p></div>
-        </article>
-      </div>
+      <!--End Modal Grid-->
     </section>
 
     <section id="plan" class="border-y border-stone-300 bg-white" aria-labelledby="plan-heading">
@@ -130,16 +193,10 @@
         <p class="mt-3 text-lg text-slate-600">This section contains useful content that could benefit from a reusable interface component.</p>
       </div>
 
-      <!-- TODO: REQUIRED PRELINE COMPONENT
-           Choose ONE appropriate Preline component and adapt it here.
-           Possible directions: accordion, tabs, modal, dropdown, alert,
-           or another instructor-approved Preline component.
-           Use official Preline documentation. -->
-
       <!-- Accordion Group -->
       <div class="hs-accordion-group rounded-xl border border-stone-300 bg-white mt-7" id="hs-basic-bordered-accordion-group">
         <div class="hs-accordion border border-gray-200 -mt-px " id="hs-bordered-heading-one">
-          <button class="hs-accordion-toggle hs-accordion-active:text-blue-700 inline-flex items-center gap-x-3 w-full font-bold text-lg text-[#142b3a] py-4 px-5 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300 disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-bordered-collapse-one">
+          <button class="hs-accordion-toggle inline-flex items-center gap-x-3 w-full font-bold text-lg text-[#142b3a] py-4 px-5 hover:bg-[#f6c77d] focus:outline-none focus:ring-4 focus:ring-[#173946] disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-bordered-collapse-one">
             <svg class="hs-accordion-active:hidden block size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
             <svg class="hs-accordion-active:block hidden size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
             Can I bring children?
@@ -154,7 +211,7 @@
         </div>
 
         <div class="hs-accordion border border-gray-200 -mt-px first:rounded-t-lg last:rounded-b-lg" id="hs-bordered-heading-two">
-          <button class="hs-accordion-toggle hs-accordion-active:text-blue-700 inline-flex items-center gap-x-3 w-full font-bold text-lg text-[#142b3a] py-4 px-5 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300 disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-bordered-collapse-two">
+          <button class="hs-accordion-toggle inline-flex items-center gap-x-3 w-full font-bold text-lg text-[#142b3a] py-4 px-5 hover:bg-[#f6c77d] focus:outline-none focus:ring-4 focus:ring-[#173946] disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-bordered-collapse-two">
             <svg class="hs-accordion-active:hidden block size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
             <svg class="hs-accordion-active:block hidden size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
             Are pets allowed?
@@ -169,7 +226,7 @@
         </div>
 
         <div class="hs-accordion border border-gray-200 -mt-px first:rounded-t-lg last:rounded-b-lg" id="hs-bordered-heading-three">
-          <button class="hs-accordion-toggle hs-accordion-active:text-blue-700 inline-flex items-center gap-x-3 w-full font-bold text-lg text-[#142b3a] py-4 px-5 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300 disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-bordered-collapse-three">
+          <button class="hs-accordion-toggle inline-flex items-center gap-x-3 w-full font-bold text-lg text-[#142b3a] py-4 px-5 hover:bg-[#f6c77d] focus:outline-none focus:ring-4 focus:ring-[#173946] disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-bordered-collapse-three">
             <svg class="hs-accordion-active:hidden block size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
             <svg class="hs-accordion-active:block hidden size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
             Can I buy items online later?
@@ -184,7 +241,7 @@
         </div>
 
         <div class="hs-accordion border border-gray-200 -mt-px first:rounded-t-lg last:rounded-b-lg" id="hs-bordered-heading-four">
-          <button class="hs-accordion-toggle hs-accordion-active:text-blue-700 inline-flex items-center gap-x-3 w-full font-bold text-lg text-[#142b3a] py-4 px-5 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300 disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-bordered-collapse-three">
+          <button class="hs-accordion-toggle inline-flex items-center gap-x-3 w-full font-bold text-lg text-[#142b3a] py-4 px-5 hover:bg-[#f6c77d] focus:outline-none focus:ring-4 focus:ring-[#173946] disabled:opacity-50 disabled:pointer-events-none" aria-expanded="false" aria-controls="hs-basic-bordered-collapse-four">
             <svg class="hs-accordion-active:hidden block size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
             <svg class="hs-accordion-active:block hidden size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
             Is the event indoors?

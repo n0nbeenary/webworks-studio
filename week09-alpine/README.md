@@ -155,18 +155,18 @@ Replace each TODO before submitting.
 
 ## Project Summary
 
-TODO
+I was tasked with coding one alpine interaction and one preline component to solve different tasks for the Mission City Makers Market webpage. I decided to use Alpine to create a modal for each maker to highlight their information individually. I also used Preline to simplify the FAQ section into an accordion group. My end goal was to make sure these components highlighted the included information while being easily accessible.
 
 ## Alpine Decision
 
 **User/client need:**  
-TODO
+Explore each maker.
 
 **Alpine directives used:**  
-TODO
+x-data, x-on, x-cloak, x-show, x-transition
 
 **Why Alpine was appropriate:**  
-TODO
+Alpine easily handles the display transitions for each modal button without needing to write a script.
 
 ## Preline Decision
 
@@ -181,27 +181,30 @@ I turned each article from the previous grid into an accordion item.
 
 ## Accessibility Notes
 
-1. TODO
-2. TODO
+1. Both components have been tested for keyboard navigation.
+2. Added high contrast hover states that matched the theme of the webpage.
 
 ## Testing Notes
 
-**Narrow viewport:** TODO  
-**Medium viewport:** TODO  
-**Wide viewport:** TODO  
-**Keyboard testing:** TODO  
-**Browser console:** TODO
+**Narrow viewport:** I changed the window size to be narrow to check that the components displayed properly. Both sections passed
+**Medium viewport:** I changed the window size to be medium to check that the components displayed properly. Both sections passed  
+**Wide viewport:** I changed the window size to be wide to check that the components displayed properly. Both sections passed 
+**Keyboard testing:** I used the keyboard to navigate the page and interact with the components. Both sections passed  
+**Browser console:** I used the mouse to navigate the page and interact with the components. Both sections passed
 
 ## Dependencies
 
-**Alpine.js — how used:** TODO  
-**Preline UI — how used:** TODO  
-**Tailwind CSS — how used:** TODO
+**Alpine.js — how used:** Used to create a component that can be adjusted to accomodate desired states, events, and responses.
+**Preline UI — how used:** Used to insert a lightweight interactive component.
+**Tailwind CSS — how used:** Used to create the output.css used to stylelize the components.
 
 ## Official Documentation Used
 
-- Alpine.js: TODO
-- Preline UI: Accordion - Bordered
+- Alpine.js: Modal
+    https://alpinejs.dev/component/modal
+    https://www.penguinui.com/components/modal
+- Preline UI: Accordion - Bordered 
+    https://preline.co/docs/components/accordion.html
 
 # Official References
 
@@ -213,16 +216,16 @@ I turned each article from the previous grid into an accordion item.
 
 # Final Check
 
-- [ ] `npm run build` completes.
+- [x] `npm run build` completes.
 - [x] Tailwind styles load.
-- [ ] Alpine interaction works.
+- [x] Alpine interaction works.
 - [x] Preline component works.
-- [ ] They solve different needs.
-- [ ] Keyboard testing works.
-- [ ] Responsive testing is complete.
-- [ ] Console has no unresolved errors.
-- [ ] README is complete.
-- [ ] `css/output.css` is committed.
-- [ ] `js/vendor/preline.js` is committed.
-- [ ] `node_modules` is not committed.
-- [ ] Work is pushed to GitHub.
+- [x] They solve different needs.
+- [x] Keyboard testing works.
+- [x] Responsive testing is complete.
+- [x] Console has no unresolved errors.
+- [x] README is complete.
+- [x] `css/output.css` is committed.
+- [x] `js/vendor/preline.js` is committed.
+- [x] `node_modules` is not committed.
+- [x] Work is pushed to GitHub.

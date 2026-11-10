@@ -9,6 +9,11 @@ Briefly summarize how you customized the existing Week 11 CMS without making rou
 
 I used the WordPress Theme Editor to select colors and typography that matched the brand specs. I used a few patterns to simplify changes for repeated blocks.
 
+## WordPress Site Access
+
+**Site URL or instructor-access information:**  
+[https://susane34.sg-host.com/]
+
 ---
 
 # Customization Decisions
